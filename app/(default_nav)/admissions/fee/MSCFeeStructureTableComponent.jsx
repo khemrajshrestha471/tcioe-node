@@ -37,6 +37,10 @@ const TableHeader = styled.th`
   @media (max-width: 768px) {
     font-size: 14px;
   }
+  @media (max-width: 480px) {
+    font-size: 12px;
+    padding: 8px;
+  }
 `;
 
 const TableData = styled.td`
@@ -44,6 +48,10 @@ const TableData = styled.td`
   text-align: center;
   @media (max-width: 768px) {
     font-size: 14px;
+  }
+  @media (max-width: 480px) {
+    font-size: 12px;
+    padding: 8px;
   }
 `;
 
@@ -69,9 +77,9 @@ const MSCFeeStructureTableComponent = () => {
         <tbody>
           <TableRow>
             <TableData>MSDEM, MSIISE, MSEQE</TableData>
-            <TableData>21355/-</TableData>
-            <TableData>46855/-</TableData>
-            <TableData>54175/-</TableData>
+            <TableData>21,355/-</TableData>
+            <TableData>46,855/-</TableData>
+            <TableData>54,175/-</TableData>
             <TableData>$2,060</TableData>
           </TableRow>
         </tbody>

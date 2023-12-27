@@ -37,6 +37,11 @@ const TableHeader = styled.th`
   border: 1px solid #999;
   @media (max-width: 768px) {
     font-size: 14px;
+    padding: 8px;
+  }
+  @media (max-width: 480px) {
+    font-size: 12px;
+    padding: 6px;
   }
 `;
 
@@ -46,17 +51,15 @@ const TableData = styled.td`
   @media (max-width: 768px) {
     font-size: 14px;
   }
+  @media (max-width: 480px) {
+    font-size: 12px;
+    padding: 6px;
+  }
 `;
 
 const TableDataHeighlight = styled(TableData)`
   font-weight: 600;
   color: #090c4c;
-`;
-
-const ProgramData = styled(TableData)`
-  @media (max-width: 480px) {
-    font-size: 12px;
-  }
 `;
 
 const BEIntakeTableComponent = () => {
@@ -229,20 +232,20 @@ const BEIntakeTableComponent = () => {
           <TableRow>
             <TableData>Total</TableData>
             <TableData>3,400.00</TableData>
-            <TableData>30,000.00</TableData>
-            <TableData>1,10,000.00</TableData>
+            <TableData>40,000.00</TableData>
+            <TableData>1,15,000.00</TableData>
           </TableRow>
           <TableRow>
             <TableDataHeighlight>Fee Payable during Admission</TableDataHeighlight>
-            <TableData>3,400.00</TableData>
-            <TableData>30,000.00</TableData>
-            <TableData>1,10,000.00</TableData>
+            <TableData>15,470.00</TableData>
+            <TableData>1,84,800.00</TableData>
+            <TableData>4,60,550.00</TableData>
           </TableRow>
           <TableRow>
             <TableDataHeighlight>Total (4 Years Including Deposits)</TableDataHeighlight>
             <TableData>56,700.00</TableData>
-            <TableData>4,80,000.00</TableData>
-            <TableData>13,08,500.00</TableData>
+            <TableData>4,90,000.00</TableData>
+            <TableData>13,13,500.00</TableData>
           </TableRow>
         </tbody>
       </Table>
